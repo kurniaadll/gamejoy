@@ -1,0 +1,63 @@
+
+
+.untitled-page {
+  &.main {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255 255 255);
+    overflow: hidden;
+  }
+
+  .imageGallerySection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .flex_row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0 10px;
+    margin: 50px 33px 54px;
+    padding: 0 83px 0 0;
+  }
+
+  .image5 {
+    margin: 11px 0 0;
+    width: 193px;
+    min-width: 0;
+  }
+
+  .image7 {
+    margin: 0 0 20px;
+    width: 58px;
+    min-width: 0;
+  }
+
+  .image6 {
+    margin: 0 0 23px;
+    width: 40px;
+    min-width: 0;
+  }
+
+  .profileSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .profileSection1 {
+    margin: 0 auto;
+    width: 96.53%;
+    aspect-ratio: 2.26;
+  }
+
+  .bestPlayersSection {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .bestPlayersSection1 {
+    margin: 31px auto 35px;
+    width: 91.74%;
+    aspect-ratio: 7.68;
+  }
+}

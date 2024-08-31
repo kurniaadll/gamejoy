@@ -1,0 +1,317 @@
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Sidebar */
+.sidebar {
+  background-color: #ffffff;
+  width: 200px;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-right: 3px solid #f0f0f0; /* Light gray right border */
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2); /* Right shadow */
+}
+
+.sidebar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin-bottom: 2px;
+}
+
+.sidebar li a {
+  display: flex;
+  align-items: center;
+  color: #333;
+  text-decoration: none;
+  padding: 17px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar li a.active {
+  background-color: #e9ecef;
+}
+
+.sidebar li a img {
+  width: 40px;
+  margin-right: 22px;
+}
+
+/* Main */
+.main {
+  background-color: #fff;
+  width: calc(100% - 240px);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(255, 0, 0, 0.1);
+}
+
+.main h2 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.my-point {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 -4px 8px rgba(0, 0, 0, 0.1),
+    4px 0 8px rgba(0, 0, 0, 0.1), -4px 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.profile-info img {
+  border-radius: 50%; /* Optional: make the profile image circular */
+  margin-right: 10px;
+}
+
+.profile-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.my-point .point-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.my-point .point-container div {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.my-point .point-container div img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.my-point .point-container div span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.my-point .coin {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.my-point .coin img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.my-point .coin span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.my-point .ambil-hadiah {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.my-point .ambil-hadiah:hover {
+  background-color: #0069d9;
+}
+
+/* Reward */
+.reward {
+  margin-bottom: 20px;
+}
+
+.reward .card-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reward .card {
+  width: calc(33.33% - 20px);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.reward .card-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reward .card-header img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.reward .card-header span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.reward .card-body {
+  margin-bottom: 10px;
+}
+
+.reward .card-body p {
+  font-size: 14px;
+  color: #333;
+}
+
+.reward .card-body span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.reward .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  border-radius: 100px;
+}
+
+.reward .card-image img {
+  width: 400px;
+}
+
+/* Pemain Terbaik */
+.pemain-terbaik {
+  margin-bottom: 20px;
+}
+
+.pemain-terbaik .player-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pemain-terbaik .player {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: calc(33.33% - 20px);
+}
+
+.pemain-terbaik .player img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.pemain-terbaik .player span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.pemain-terbaik .player .point {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.pemain-terbaik .player .point img {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.pemain-terbaik .player .point span {
+  font-size: 14px;
+  color: #333;
+}
+
+.pemain-terbaik .see-more {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pemain-terbaik .see-more:hover {
+  background-color: #0069d9;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+  .reward .card-container {
+    flex-direction: column;
+  }
+
+  .reward .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .pemain-terbaik .player-container {
+    flex-direction: column;
+  }
+
+  .pemain-terbaik .player {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
